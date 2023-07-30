@@ -74,11 +74,11 @@ class ColorBox(QWidget):
             return True 
         self.border = 1
 
-    def setColorHSV(self,h,s,v):
-        self.color.setHsv(h,s,v,255)
+    def setColorHSV(self, h, s, v):
+        self.color.setHsv(int(h), int(s), int(v), 255)
         self.update()
 
-    def setColorRGBF(self,r,g,b,a = 1.0):
+    def setColorRGBF(self, r, g, b, a = 1.0):
         self.color.setRgbF(r, g, b, a)
         self.update()
   
